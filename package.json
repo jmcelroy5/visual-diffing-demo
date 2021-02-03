@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token 2fb610e17461"
+    "chromatic": "npx chromatic --project-token 2fb610e17461",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.13",
+    "@percy/storybook": "^3.3.1",
     "@storybook/addon-actions": "^6.1.16",
     "@storybook/addon-essentials": "^6.1.16",
     "@storybook/addon-links": "^6.1.16",
